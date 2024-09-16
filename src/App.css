@@ -2,6 +2,7 @@
 
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   background-color: rgba(210, 105, 30, 0.404);
