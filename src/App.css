@@ -43,10 +43,12 @@
   bottom: 1em;
   right: 1em;
   padding: .35em .4em .2em .4em;
-  background-color: var(--primary-color);
-}
-.Quote .DeleteBtn img{
   height: 25px;
+  transition: .5s;
+}
+.Quote .DeleteBtn:hover{
+  cursor: pointer;
+  transform: scale(115%);
   
 }
 .Quote .DeleteBtn:hover{
