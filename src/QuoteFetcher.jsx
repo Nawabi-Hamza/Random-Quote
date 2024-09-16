@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import deleteIcon from "./assets/icons8-delete-100.png"
 
 const RANDOM_QUOTE_URL = "https://inspo-quotes-api.herokuapp.com/quotes/random"
 
@@ -32,7 +33,9 @@ function QuoteFetcher() {
             <div className='Quote' key={idx}>
                 <h3>{item.text}</h3>
                 <p>~{item.author}</p>
-                <button className='DeleteBtn' onClick={()=> handleDelete(idx)}>x</button>
+                <button className='DeleteBtn' onClick={()=> handleDelete(idx)}>
+                    <img src={deleteIcon} alt="delete icon"/>
+                </button>
             </div>
         ))}
     </div>
